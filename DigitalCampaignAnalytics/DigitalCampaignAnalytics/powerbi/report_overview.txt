@@ -1,0 +1,11 @@
+
+Power BI Report: Campaign Performance Dashboard
+
+Pages:
+1. Overview: KPIs for total impressions, clicks, and conversions
+2. ROI Analysis: Spend vs. revenue with time filters
+3. Channel Comparison: Performance breakdown by channel (Facebook, Google, etc.)
+4. Drillthrough: Campaign-specific drillthrough for performance by day
+
+Data Source: Azure Synapse SQL
+Refresh Schedule: Daily (configured via Power BI Service)

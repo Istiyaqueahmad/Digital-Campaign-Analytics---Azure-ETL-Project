@@ -1,0 +1,20 @@
+
+{
+  "definition": {
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+    "actions": {
+      "Send_approval_email": {
+        "type": "OpenApiConnection",
+        "inputs": {
+          "host": { "connection": { "name": "@parameters('$connections')['office365']['connectionId']" } },
+          "operationId": "SendEmailNotification",
+          "parameters": {
+            "email": "marketing-team@example.com",
+            "subject": "New Campaign Data Ready",
+            "body": "Click here to review the latest metrics in Power BI."
+          }
+        }
+      }
+    }
+  }
+}
